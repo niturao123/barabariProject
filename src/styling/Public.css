@@ -1,0 +1,26 @@
+.publicMainDiv{
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+}
+.publicDiv p{
+    color: black;
+    text-align: start;
+    font-size: 1.2rem;
+}
+.publicDiv h1{
+    color: black;
+    text-align: start;
+    margin-top: 10%;
+
+}
+.publicImgDiv img{
+    height: 400px;
+}
+button{
+    color: #ffffff;
+    font-size: 1.2em;
+    background-color: #334499;
+    padding: 6px;
+    border-radius: 25%;
+}

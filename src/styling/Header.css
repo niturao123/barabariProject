@@ -1,0 +1,46 @@
+.hDiv {
+  padding: 100px;
+  background-color: #334499;
+}
+.cardDiv{
+  display: flex;
+  background-color: green;
+}
+.headerDiv {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.imgDiv{
+  width: 200px;
+}
+.Para{
+  background-color: rgb(151, 156, 151);
+  height: 200px;
+  text-align: center;
+  padding: 2%;
+  border-radius: 4%;
+  width: 100px;
+}
+.headerDiv h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.sliderdiv{
+  border-radius: 5%;
+}
+.headerDiv p {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+
+.testimonial-slide {
+  text-align: center;
+  padding: 20px;
+}
+.testimonial-para {
+  font-style: italic;
+  color: #777;
+}
