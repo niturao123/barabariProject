@@ -1,46 +1,91 @@
-.hDiv {
-  padding: 100px;
-  background-color: #334499;
+/* Mobile Screen Styling */
+@media (max-width: 375px) {
+  .sliderContent {
+    flex-direction: column; /* Stack elements vertically */
+    gap: 10px; /* Reduce gap for smaller screens */
+  }
+
+  .prevButton,
+  .nextButton {
+    font-size: 18px; /* Adjust button size */
+    width: 40px;
+    height: 40px;
+  }
+
+  .cardDiv {
+    flex-direction: column; /* Stack cards vertically */
+    gap: 20px; /* Smaller gap for cards */
+  }
+
+  .cardDiv img {
+    height: 100px; /* Reduce image height */
+  }
+
+  .Para {
+    padding: 15px; /* Adjust padding */
+    width: 50%; /* Full width for text */
+  }
+
+  .sliderdiv {
+    padding: 15px; /* Adjust padding */
+  }
 }
-.cardDiv{
+
+
+.sliderContent {
   display: flex;
-  background-color: green;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 10px; /* Space between elements */
 }
-.headerDiv {
-  text-align: center;
-  margin-bottom: 30px;
+
+.prevButton,
+.nextButton {
+  background-color: #ffffff;
+  color: #334499;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-.imgDiv{
-  width: 200px;
+
+
+.cardDiv {
+  display: flex;
+  align-items: center;
+  gap: 10%;
 }
-.Para{
-  background-color: rgb(151, 156, 151);
-  height: 200px;
+
+.cardDiv img {
+  height: 290px;
+}
+.hDiv{
+  background-color: #334499;
+  height: 700px;
+}
+.headerDiv{
+  color: #ffffff;
   text-align: center;
   padding: 2%;
-  border-radius: 4%;
-  width: 100px;
 }
-.headerDiv h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffffff;
-}
-.sliderdiv{
-  border-radius: 5%;
-}
-.headerDiv p {
-  font-size: 16px;
-  color: #ffffff;
-  margin: 10px 0;
-}
-
-
-.testimonial-slide {
+.Para {
+  background-color: rgb(151, 156, 151);
   text-align: center;
   padding: 20px;
+  border-radius: 10px;
+  width: 40%;
+  height: 200px;
 }
-.testimonial-para {
-  font-style: italic;
-  color: #777;
+
+.sliderdiv {
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
 }
