@@ -1,0 +1,33 @@
+.logoDiv{
+    display: flex;
+    gap: 1%;
+    margin-left: 7%;
+}
+.publicImgDiv{
+    display: flex;
+    justify-content: space-around;
+}
+.publicImg {
+height: 10000px;
+}
+.chatButton{
+    background-color: rgb(241, 241, 97);
+    color: black;
+}
+.logoDivPara h1{
+    line-height: 1.9em;
+}
+
+.logoDivPara span{
+    color: #334499;
+}
+.logoDivPara p{
+    font-size: 1.4em;
+    opacity: 0.7;
+}
+.logoDivPara button{
+    padding: 1.9%;
+    border-radius: 20px;
+    font-size: xx-large;
+    font-weight: 300;
+}

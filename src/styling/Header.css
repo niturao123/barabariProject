@@ -1,43 +1,70 @@
 /* Mobile Screen Styling */
 @media (max-width: 375px) {
   .sliderContent {
-    flex-direction: column; /* Stack elements vertically */
-    gap: 10px; /* Reduce gap for smaller screens */
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    align-items: center; /* Vertically center elements */
+    justify-content: space-between; /* Space between items */
+    width: 100%; /* Full width */
+    position: relative; /* Position buttons relative to this container */
   }
 
   .prevButton,
   .nextButton {
-    font-size: 18px; /* Adjust button size */
+    font-size: 18px;
     width: 40px;
     height: 40px;
+    background-color: rgba(0, 0, 0, 0.5); /* Button background */
+    color: white; /* Button text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute; /* Position buttons absolutely */
+    top: 50%; /* Vertically center */
+  }
+
+  .prevButton {
+    left: 10px; /* Position prevButton on the left side */
+  }
+
+  .nextButton {
+    right: 10px; /* Position nextButton on the right side */
   }
 
   .cardDiv {
-    flex-direction: column; /* Stack cards vertically */
-    gap: 20px; /* Smaller gap for cards */
+    display: flex;
+    flex-direction: row; /* Cards arranged horizontally */
+    gap: 0px; /* Adjust gap between cards */
+    flex: 1; /* Allow cards to take available space */
   }
 
   .cardDiv img {
-    height: 100px; /* Reduce image height */
+    height: 10px; /* Adjust image size */
   }
 
   .Para {
-    padding: 15px; /* Adjust padding */
-    width: 50%; /* Full width for text */
+    padding: 5px;
+    width: 30%; /* Adjust width */
+    text-align: center; /* Optional: Center text */
   }
 
   .sliderdiv {
-    padding: 15px; /* Adjust padding */
+    padding: 5%;
   }
 }
-
 
 .sliderContent {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  gap: 10px; /* Space between elements */
+}
+.sliderdiv h5{
+  color: #ffffff;
+  font-size: 1.2em;
+  text-align: center;
+  margin-right: 15%;
+  margin-top: 0.3%;
 }
 
 .prevButton,
@@ -75,8 +102,17 @@
   text-align: center;
   padding: 2%;
 }
+.company img{
+  height: 20px;
+  margin-bottom: -20%;
+  
+}  /* width: 10%; */
+
+.company{
+  display: flex;
+}
 .Para {
-  background-color: rgb(151, 156, 151);
+  background-color: rgba(238, 242, 238, 0.29);
   text-align: center;
   padding: 20px;
   border-radius: 10px;
@@ -86,6 +122,5 @@
 
 .sliderdiv {
   border-radius: 10px;
-  overflow: hidden;
   padding: 20px;
 }

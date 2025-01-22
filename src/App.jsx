@@ -3,6 +3,8 @@ import './App.css'
 import { Header } from './components/Header'
 import { Public } from './components/Public'
 import { Footer } from './components/Footer'
+import { Chat } from './components/Chat'
+import { Chats } from './components/Chats'
 
 function App() {
   return (
@@ -18,14 +20,19 @@ function App() {
           image="linked.png" />
         <Footer link="https://www.instagram.com/thebarabariproject/"
           image="insta.png" />
-                <div className='linkDiv-para'>
+
+      <div className='linkDiv-para'>
         <p>2024 @ All Right Reserved</p>
         <p>Designed and Developed by Barabari Project Dev Team</p>
       </div>
-
       </div>
+      <Chat/>
+      <Chats/>
+      
     </>
   )
+    
+  
 }
 
 export default App

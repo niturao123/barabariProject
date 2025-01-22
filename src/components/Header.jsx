@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../styling/Header.css"; // Path to your CSS file
+import "../styling/Header.css"; 
 
 export const Header = () => {
     const testimonials = [
@@ -8,21 +8,21 @@ export const Header = () => {
             text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             name: "John Doe",
             role: "Manager, XYZ Company",
-            logo: "amazon-logo.png",
+            logo: "logo.jpeg",
         },
         {
             img: "card.png",
-            text: "Another testimonial text goes here. Feel free to customize.",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             name: "Jane Smith",
             role: "CEO, ABC Company",
-            logo: "google-logo.png",
+            logo: "logo.jpeg",
         },
         {
             img: "card.png",
-            text: "A third testimonial to demonstrate the slider.",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             name: "Robert Brown",
             role: "CTO, DEF Company",
-            logo: "microsoft-logo.png",
+            logo: "logo.jpeg",
         },
     ];
 
@@ -60,12 +60,20 @@ export const Header = () => {
                             <div className="role">{testimonials[currentIndex].role}</div>
                             <div className="company">
                                 <img src={testimonials[currentIndex].logo} alt="Company Logo" />
+                                <div>
+                                    <img src="ryan.png" alt="" />
+                                    <h3>Name</h3>
+                                    <p>Hello</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <button onClick={goToNext} className="nextButton">&#8250;</button>
                 </div>
+                <h5>Xyz Chatbot</h5>
+
             </div>
         </div>
+        
     );
 };
