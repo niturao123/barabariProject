@@ -18,13 +18,15 @@
     height: 400px;
 }
 button {
-    color: #ffffff;
-    font-size: 1.2em;
-    background-color: #334499;
-    padding: 6px;
-    padding-top: 5px;
-    border-radius: 25%;
-}
+    background-color: #004d99;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.1em;
+    cursor: pointer;
+  }
 
 /* Styles for phone screens */
 @media (max-width: 375px) {
