@@ -61,11 +61,14 @@ export const Chats = () => {
               couple of minutes, we would love to hear more.
             </p>
             <button className="startChatButton">Start Chat</button>
-            <p>Got any other queries?</p>
-            <p>Please drop us an email at barabaricollective@gmail.com</p>
+            <div className="startChatButtonPara">
+            <h2>Got any other queries?</h2>
+            <p>Please drop us an email at </p>
+            <a href="">barabaricollective@gmail.com</a>
+            </div>
           </div>
         </div>
       )}
     </div>
-  );
-};
+    
+  );}
