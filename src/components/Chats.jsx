@@ -15,12 +15,21 @@ export const Chats = () => {
   };
 
   return (
-    <div>
+    <div className="contactDiv">
       {!showChatPage ? (
         <div>
           <div className="logoDiv">
             <img src="logo.png" alt="Barabari logo" />
             <p>The Barabari Project</p>
+            <div className="contactButton">
+              <button>Contact</button>
+              <svg class="icon" viewBox="0 0 100 80" width="46" height="20">
+                <rect width="100" height="15"></rect>
+                <rect y="35" width="100" height="15"></rect>
+                <rect y="65" width="100" height="15"></rect>
+            </svg>
+
+            </div>
           </div>
           <div className="publicImgDiv">
             <div className="logoDivPara">
@@ -43,32 +52,8 @@ export const Chats = () => {
           </div>
         </div>
       ) : (
-        <div className="chatPage">
-          <button className="backButton" onClick={handleBackClick}>
-            Back
-          </button>
-          <div className="chatContainer">
-            <div className="backChat">
-            <div onClick={handleBackClick}>|-</div>
-            <div> Chat with us  </div>
-            <div onClick={handleBackClick}>x</div>
-            </div>
-            <img src="search.png" alt="" />
-            <h1>Hi There!</h1>
-            <p>Want to work with us?</p>
-            <p>
-              We are happy to discuss any potential projects. If you have a
-              couple of minutes, we would love to hear more.
-            </p>
-            <button className="startChatButton">Start Chat</button>
-            <div className="startChatButtonPara">
-            <h2>Got any other queries?</h2>
-            <p>Please drop us an email at </p>
-            <a href="">barabaricollective@gmail.com</a>
-            </div>
-          </div>
-        </div>
+        <ChatPage onBack={handleBackClick} /> // Using the ChatPage component
       )}
     </div>
-    
-  );}
+  );
+};
